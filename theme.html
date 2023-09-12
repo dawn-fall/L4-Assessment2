@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Tourism</title>
+      <style>
+        .content{
+          margin-left: 30px;
+          margin-right: 30px;
+          padding:25px;
+          background-color:rgba(176, 189, 197, 0.753);
+          height: 190%;
+        }
+
+        .flex{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin-left: 60px;
+          margin-right: 60px;
+        }
+
+        h1, h3{
+          color: black;
+        }
+      </style>
+</head>
+<body>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="topnav" class="topnav a:hover" class="topnav a" style="text-align:middle">
+        <br><img src="images/logo.png" alt="Logo" class="center" style="height: 80px; width: 100px;">
+        <a href="index.html">Home</a>
+        <a href="destination.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="active" href="theme.html">Theme</a>
+        <a href="videogallery.html">Video Gallery</a>
+        <a href="overseas.html">Overseas Attractions</a>
+        <a href="ourblog.html">Our Blog</a>
+        <a href="ref.html">References</a>
+      </div>
+
+      <div class="content">
+        <h1 style="text-align:center">Theme</h1>
+        <h1 style="text-align:center">Tourism in New Zealand</h1>
+
+        <div class="flex">
+          <div class="gallery">
+            <h3 style="text-align: center;">Browns Bay</h3>
+            <a target="_blank" href="images/browns.jpg">
+              <img src="images/browns.jpg" alt="Browns Bay, Auckland" width="600" height="400">
+            </a>
+            <div class="desc">Browns Bay, Auckland is one of the most northernmost suburbs in the Auckland area, located in the North Shore. It lies with the East Coast Bays area, which is a string of small suburbs that form the northernmost part of the North Shore.</div>
+          </div>
+
+          <div class="gallery">
+            <h3 style="text-align: center;">Hamilton Gardens</h3>
+            <a target="_blank" href="images/gardens.jpg">
+              <img src="images/gardens.jpg" alt="Hamilton Gardens" width="600" height="400">
+            </a>
+            <div class="desc">The Hamilton Gardens is one of the most visited tourist attraction in the Waikato. It's a public garden park in (as the name suggests) the south of Hamilton. It resides on the banks of the Waikato River and includes enclosed gardens, open lawns, a lake and more.</div>
+          </div>
+          
+          <div class="gallery">
+            <h3 style="text-align: center;">Wellington Harbour</h3>
+            <a target="_blank" href="images/wellington.jpg">
+              <img src="images/wellington.jpg" alt="Wellington Harbour" width="600" height="400">
+            </a>
+            <div class="desc">Wellington Harbour (also known as Port Nicholson or Te Whanganui-a-Tara) is a large natural harbour on the southern tip of the North Island. It is the inlet of the Cook Strait.</div>
+          </div>
+          
+            <div class="gallery">
+              <h3 style="text-align: center;">Haast</h3>
+              <a target="_blank" href="images/haast.jpg">
+                <img src="images/haast.jpg" alt="Haast, New Zealand" width="600" height="400">
+              </a>
+              <div class="desc">Haast is a small town in the Westland district territorial authority on the West Coast of the South Island. It's famous for its dramatic landscapes, being situated on the western edge of Mount Aspiring National Park.</div>
+            </div>
+
+            <div class="gallery">
+              <h3 style="text-align: center;">Bay of Islands</h3>
+              <a target="_blank" href="images/bayofisland.jpg">
+                <img src="images/bayofisland.jpg" alt="Bay of Islands, Auckland" width="600" height="400">
+              </a>
+              <div class="desc">The Bay of Islands are a subtropical micro-region known for its stunning beauty (and history). Only a 35 minute flight from Auckland brings you here. It ecompasses 144 islands between Cape Brett and the Purerua Peninsula, including towns like Paihia, Russell and Kerikeri.</div>
+            </div>
+
+            <div class="gallery">
+              <h3 style="text-align: center;">Fiordland National Park</h3>
+              <a target="_blank" href="images/fiordland.jpg">
+                <img src="images/fiordland.jpg" alt="Fiordland" width="600" height="400">
+              </a>
+              <div class="desc">National Park is located in the southwest of the South Island. It's known for its glacier-carved fiords of Doubtful and Milford sounds. It's a great place for nature lovers due to its spanning mountain ranges, dense forests and alpine lakes.</div>
+            </div>
+          </div>
+    </div>
+
+      <script>
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+  <div class="footer">
+    <p><a href="index.html">Home Page</a></p>
+    <p style="color: white; font-size: small;">NZToursNZ Copyright © 2022</p>
+  </div>
+
+
+</body>
+</html>

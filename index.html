@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Homepage</title>
+    
+
+    <style>
+        .container{
+          width:100%;
+          border:3px;
+          overflow:hidden;
+        }
+          
+        #showcase{
+          min-height: 400px;
+          background: url("images/bgauckland.jpg") no-repeat 0; 
+          text-align: center;
+          color:rgb(255, 255, 255);
+          text-shadow: 2px 2px rgb(22, 87, 117);
+        }
+
+        #showcase h1{
+          margin-top:100px;
+          font-size:55px;
+          margin-bottom:10px;
+          font-family:Arial, Helvetica, sans-serif;
+        }
+            
+        #showcase p{
+          font-size:20px;
+          font-weight: bold;
+          font-family:Arial, Helvetica, sans-serif;
+          color: white;
+        }
+
+        #showcaselanding{
+          min-height: 150px;
+          width: 100%;
+          background: url("images/bgauckland.jpg") no-repeat 0; height: 80px;
+          text-align: center;
+          color:whitesmoke;
+          text-shadow: 2px 2px rgb(22, 87, 117);
+        }
+
+        .content{
+          margin-left: 30px;
+          margin-right: 30px;
+          padding:25px;
+          background-color:rgba(176, 189, 197, 0.753);
+          height: 130%;
+          color: black;
+        }
+
+        h1{
+          font-family:Arial, Helvetica, sans-serif;
+          font-size: 35px;
+        }
+
+        h2{
+          font-family:Arial, Helvetica, sans-serif;
+          font-size: 28px;
+        }
+        
+        .flex{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+
+        div.gallery {
+          margin: 5px;
+          border: 1px solid black;
+          float: left;
+          width: 1010px;
+        }
+
+        div.gallery img {
+          width: 1000px;
+          height: 319px;
+        }
+  
+    </style>
+  </head>
+<body>
+    
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="topnav" class="topnav a:hover" class="topnav a" style="text-align:middle">
+        <br><img src="images/logo.png" alt="Logo" class="center" style="height: 80px; width: 100px;">
+        <a class="active" href="index.html">Home</a>
+        <a href="destination.html">Destinations</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="theme.html">Theme</a>
+        <a href="videogallery.html">Video Gallery</a>
+        <a href="overseas.html">Overseas Attractions</a>
+        <a href="ourblog.html">Our Blog</a>
+        <a href="ref.html">References</a>
+    </div>
+
+    <section id="showcase">
+      <div class="container">
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1>New Zealand</h1>
+          <p>Aotearoa - The Land of the Long White Cloud</p>
+      </div>
+    </section>
+
+    <div class="content">
+
+      <h1 style="text-align:center;">Kia Ora!</h1>
+      <p style="text-align:center;">Kia ora, and welcome to our beautiful Aotearoa!</p>
+      <p style="text-align:center;">There's so much to do in this country, so allow us to help you find your way around. We'll show you some key places we think you should visit, perhaps give you a little warning on what to expect here and more.</p>
+
+      <div class="flexcenter">
+        <div class="dropdown">
+          <button class="dropbtn">Explore our page!</button>
+          <div class="dropdown-content">
+            <a href="destination.html">Destinations</a>
+            <a href="gallery.html">Image Gallery</a>
+            <a href="theme.html">Theme Page</a>
+            <a href="videogallery.html">Video Gallery</a>
+            <a href="overseas.html">Overseas Attractions</a>
+            <a href="ourblog.html">Our Blog</a>
+            <a href="ref.html">Reference Page</a>
+          </div>
+        </div>
+      </div>
+
+      <h2 align="right">A map of our country</h2>
+      <img src="images/map.jpg" alt="Map of New Zealand" align="right" width="30%">
+
+      <div class="flex">
+        <div style="padding-right: 200px;">
+        <h2>The current time in New Zealand.</h2>
+      </div>
+      </div>
+
+      <div class="flex">
+        <div style="text-align:center;padding:1em 0;margin-right: 205px;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/timezone/pacific--auckland"><span style="color:gray;">Current local time in</span><br />Pacific/Auckland</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Pacific%2FAuckland" width="100%" height="115" frameborder="0" seamless></iframe> </div>
+      </div>
+
+      <div class="gallery">
+        <h3 style="text-align: center;">Click the image to take a look at our Theme Page, which has a selected few images.</h3>   
+
+        <map name="workmap">
+          <area title="Gallery" shape="rect" alt="Gallery" href="theme.html">
+        </map>
+
+        <a target="_blank" href="theme.html">
+          <img src="images/browns.jpg" alt="Gallery" usemap="#workmap" width="400" height="379">
+        </a>
+      </div>
+
+        
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+      
+
+
+    </div>
+
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="footer">
+      <p style="color: white;">NZToursNZ Copyright © 2022</p>
+    </div>
+
+
+</body>
+</html>

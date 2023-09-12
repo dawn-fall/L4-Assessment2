@@ -1,0 +1,255 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 Arial, Helvetica, sans-serif;
+    color: #777;
+ }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("images/2.jfif");
+    min-height: 80%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("images/3.jfif");
+    min-height: 100%;
+  }
+  
+  .bgimg-3 {
+    background-image: url("images/4.jfif");
+    min-height: 100%;
+  }
+  
+  .bgimg-4 {
+    background-image: url("images/4.jfif");
+    min-height: 100%;
+  }
+
+  .bgimg-5 {
+    background-image: url("images/tokoroa.jpg");
+    min-height: 100%;
+  }
+  
+  .bgimg-6 {
+    background-image: url("images/tirau.jfif");
+    min-height: 100%;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  
+  .caption span.border {
+    background-color: rgba(20,18,25,0.2);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .footer {  
+  position: fixed;  
+  left: 0px;  
+  bottom: 0px;  
+  right: 0px;   
+  width: 100%;  
+  background-color: #141219;  
+  color: white;  
+  text-align: center; 
+  display: block;
+  }  
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #141219;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-align: center;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #1484b2;
+    color: white;
+    text-align: center;
+  }
+  
+  #myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: #1484b2; 
+    color: white;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 20px; 
+    width: auto;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a background on hover */
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+   }
+  }
+  
+  .middle{
+    display: flex;
+    justify-content: center;
+  }
+
+  .content{
+    margin-left: 25px;
+    margin-right: 25px;
+    padding:15px;
+    background-color:rgba(176, 189, 197, 0.753);
+  }
+
+  button {
+    border: none;
+    Background-color: #1484b2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    float: left;
+    color: white;
+  }
+
+  .vertical-menu {
+    width: 400px; 
+ }
+
+ img{
+    margin: 5px;
+  }
+
+  p{
+    color: black;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+    width: 710px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 700px;
+    height: 300px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    color: black;
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #1484b2;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 65px;
+  margin-left: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display:block}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #106c91;}
+
+.flexcenter{
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  font-size: 35px;
+}
